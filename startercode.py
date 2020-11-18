@@ -16,6 +16,8 @@ from deepsnap.dataset import GraphDataset
 from deepsnap.batch import Batch
 from torch.utils.data import DataLoader
 
+import parallel
+
 datadir = 'data/'
 name = 'BioSNAP-Chemical-Chemical'
 f = datadir + 'minercc.tsv'
