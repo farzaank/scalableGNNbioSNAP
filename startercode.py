@@ -91,6 +91,7 @@ def test():
 
 val_max = -math.inf
 best_model = model
+model = parallel.parallelize(model)
 for epoch in range(1, 201):
     train()
     log = 'Epoch: {:03d}, Train: {:.4f}, Val: {:.4f}, Test: {:.4f}'
